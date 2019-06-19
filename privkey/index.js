@@ -13,13 +13,13 @@ module.exports = async function (context, req) {
         const ac = nem2Sdk.Account.createFromPrivateKey(req.body.privkey, nw);
         context.res = {
             status: 200,
-            body: {pubkey: ac.publicKey}
+            body: { pubkey: ac.publicKey }
         };
     }
     else {
         context.res = {
             status: 400,
-            body: {pubkey: "Error"}
+            body: { pubkey: "Error" }
         };
     }
 };

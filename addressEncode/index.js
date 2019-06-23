@@ -3,7 +3,7 @@ const nem2lib = require("nem2-library");
 
 module.exports = async function (context, req) {
 
-    if (req.body && req.body.address) {
+    if (req.query.address) {
         const binAddress = nem2lib.convert.hexToUint8(req.query.address);
         const rowAddress = nem2lib.address.addressToString(binAddress);
         const address = nem2Sdk.Address.createFromRawAddress(rowAddress);

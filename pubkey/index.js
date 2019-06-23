@@ -1,5 +1,4 @@
 const nem2Sdk = require("nem2-sdk");
-
 const nw = nem2Sdk.NetworkType.MIJIN_TEST;
 
 module.exports = async function (context, req) {

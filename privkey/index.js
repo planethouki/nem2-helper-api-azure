@@ -1,11 +1,5 @@
 const nem2Sdk = require("nem2-sdk");
-const nem2lib = require("nem2-library");
-const jssha3 = require('js-sha3');
-const rxjs = require("rxjs");
-const op = require("rxjs/operators");
-
 const nw = nem2Sdk.NetworkType.MIJIN_TEST;
-const epochTimestamp = 1459468800000;
 
 module.exports = async function (context, req) {
 
